@@ -1,3 +1,7 @@
+leftWristX = "";
+rightWristX = "";
+difference = "";
+
 function preload()
 {}
 
@@ -21,6 +25,9 @@ function modelLoaded()
 function draw()
 {
     background('#610e78');
+    textSize(difference);
+    fill("red");
+    text("Sanidhya Gupta", 20, 200);
 }
 
 function gotPoses(results)
@@ -28,5 +35,11 @@ function gotPoses(results)
     if(results.length > 0)
     {
         console.log(results);
+        leftWristX = results[0].pose.leftWrist.x;
+        rightWristX = results[0].pose.rightWrist.x;
+        difference = Math.floor(leftWristX - rightWristX);
+
+
     }
 }
+
