@@ -1,43 +1,25 @@
-.header{
-    margin-top: 0;
-    position: fixed;
-    width: 100%;
-    background-color: orangered;
+#body{
+    background-size: cover;
 }
 
-#hh{
-    color: white;
-    font-weight:bold;
-    font-size:40px;
-}
-
-#hp{
-    color: black;
-    font-size: 20px;
-}
-
-#hp1,#hs
+#division
 {
-    color: white;
-    font-size: 30px;
-    font-weight: bold;
+    position: fixed;
+    width: 100%;
+    margin-top: -12px;
+
 }
 
-footer {
-    position: fixed;
-    font-weight: bold;
-    bottom: 0;
-    width: 100%;
-    background-color: orangered;
-    color: white;
-    text-align: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-size: 20px;
- }
+.note
+{
+    color: black;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
 
- canvas
- {
+canvas{
     border: 2px dotted orangered;
- }
+    margin-top: -30px;
+
+}
 

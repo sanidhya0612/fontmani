@@ -1,27 +1,38 @@
 <!DOCTYPE html>
+<html>
 <head>
-        <title>FONT MANIPULATOR!!!</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
-        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
-    
-        <link rel="stylesheet" type="text/css" href="style.css">
+	<title>AI MUSIC WEB APP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/addons/p5.sound.min.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/addons/p5.sound.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 
-<body background="https://as2.ftcdn.net/v2/jpg/01/02/48/93/1000_F_102489308_UpR3lZwqibip9aHmadkUbzfUzyrEThCn.jpg">
-<center>
-    <div class = "header">
-        
-        <h1 id="hh">FONT MANIPULATOR</h1>
-        <p id="hp">NOTE:- Get your left and right hand closer to reduce the font size and to increase it move your left and right hand away.</p>
-        <p id="hp1">FONT SIZE IS:- <span id="hs"></span></p>
-    </div>
+<body id="body" background="https://img.freepik.com/free-vector/glowing-shiny-musical-notes-background-design_1017-32856.jpg">
+  
+    <div id="division" class="btn btn-warning">
+    <h3 class="heading"><b><u>AI MUSIC WEB APP</u></b></h3>
 
-    <footer>Researched By- SANIDHYA GUPTA</footer>
-</center>
-<script src="main.js"></script>
+    <br>
+
+    <h4 class="note"><b>NOTE:-</b> Get your left-hand wrist in front of the webcam to play <b>"Peter Pan"</b> song. <br>
+    Get your right-hand wrist in front of the webcam to play <b>"Harry Potter"</b> theme song.<br><br> Keep atleast 2 feet distance 
+    from the webcam, so that your wrists are detected quickly.</h4>
+    </div>
+    <br>
+  <center>
+    <br>
+    <div><h4 id="song_name" class="btn btn-danger"></h4></div>
+
+  </center>
+    <script src="main.js"></script>
 </body>
 </html>
